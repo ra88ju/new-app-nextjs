@@ -15,7 +15,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black shadow-lg z-50 mx-4 mt-4 rounded-2xl">
+    <header className="fixed top-0 left-0 right-0 bg-black shadow-lg z-50 mx-4 mt-4 rounded-2xl shadow-[0_0_15px_rgba(255,255,255,0.1)] border border-gray-800">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
@@ -30,7 +30,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]"
               >
                 {item.name}
               </Link>
@@ -41,7 +41,7 @@ export default function Header() {
           <div className="sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 hover:bg-gray-800"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 hover:bg-gray-800 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
@@ -66,7 +66,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-300 hover:bg-gray-800"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-300 hover:bg-gray-800 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
