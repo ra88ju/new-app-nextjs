@@ -77,22 +77,26 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen bg-black py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black py-16 sm:py-24 px-3 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-white mb-4">Our Services</h1>
-          <p className="text-xl text-gray-300">E-learning Solutions</p>
+        <div className="text-center mb-8 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 sm:mb-4">Our Services</h1>
+          <p className="text-lg sm:text-xl text-gray-300">E-learning Solutions</p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 flex flex-col"
+              className="bg-gray-800 rounded-xl p-4 sm:p-6 hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 flex flex-col"
             >
-              <div className="text-blue-500 mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
-              <p className="text-gray-400 flex-grow">{service.description}</p>
+              <div className="text-blue-500 mb-3 sm:mb-4">
+                <div className="w-6 h-6 sm:w-8 sm:h-8">
+                  {service.icon}
+                </div>
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2">{service.title}</h3>
+              <p className="text-sm sm:text-base text-gray-400 flex-grow">{service.description}</p>
             </div>
           ))}
         </div>
