@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0">
             <Link href="/" className="font-bold text-xl text-white hover:text-gray-300 transition-colors">
-              Logo
+              E-EdU
             </Link>
           </div>
 
